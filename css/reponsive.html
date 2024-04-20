@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- media query uppaar se niche jate hai aur true conditon uska css add hoga -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      /* div {
+        height: 2cm;
+        background-color: red;
+      } */
+      /* jab width kam hoaga */
+      div{
+        border: solid 2px green;
+        padding: 3px;
+        margin: 8px;
+      }
+      @media (width<400px) {
+        .f{
+          background-color: blue;
+          /* display: none; */
+
+        }
+        .s{
+            display: none;
+        }
+      }
+      @media (width>400px) {
+        .s{
+          background-color: red;
+          /* display: none; */
+        }
+        .f{
+            display: none;
+        }
+      }
+      /* @media (orientation :potrait) {
+        div{
+            background-color: bisque;
+        }
+    } */
+      /* @media (width>400px) and (width<800px) { */
+        /* and here is logical AND booth true then yes */
+        /* .s {
+          color: azure;
+        }
+      } */
+
+    </style>
+  </head>
+  <body>
+    <div class="f">this is 1nd div</div>
+    <div class="s">this is 2nd div</div>
+  </body>
+</html>

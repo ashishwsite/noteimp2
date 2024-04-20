@@ -1,0 +1,31 @@
+only inside  folder file (child) is add in git repo 
+step to add folder file in git repo
+first open that folder with git base commat promot (preley make repo in github website )
+second check folder is correct or not (if not correct change folder dirctely by cd folder_name )
+git init (to initiale git adding procce)
+git status(to check the file preence and status in folder /git)
+git add . (to add all file in git repo)
+git status(untraack file means it is present in your local repo) to solve it git add .
+git status (unstrage means it is present in git but not online so make git commit ) git commit -m "message anyy for refrence "
+git status(if nothing in master brance, its means know your file is add but you have to link it to online  ) 
+by past your online repo link in gitbase terminal 
+past commamnd to push on master branch
+#### now after the adding and pushing ,modification in local seen in repo we have to make two thing 
+used vs code for thsi 
+in commit indicator click on right tick
+// to make serpeate repo make sure that its parent folder does not contain any .git folder 
+// if repo is createby source config. automatically then{this repo is for parent folder }
+// to remove parent .gitfile it will remove from file explore part 
+PUBLIC TO GITHUB ALSO CREATE .GITFILE IN papernt folder automatically but only differcne is its asked befor folder is updatead
+<<<<<<< HEAD
+commit and syn is madatory
+TO ADD FILE /folder ON GITHUB USING VS code
+1.OPEN FOLDER IN vs code 2. run git init (it create an local .git repo in your folder )
+
+=======
+########### 1 baar system ke vs code se file ko gitpar uplord kar diya to apne aap hi ab sare upload hone lagega 
+bas commit and syn karna hota hai .git apne aapp hi repo bana leta hai aur usko add kar leta hai 
+>>>>>>> 3423fc358d59b09bef7a46f0548d904933937f41
+
+ 
+

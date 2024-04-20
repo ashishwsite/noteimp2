@@ -1,0 +1,40 @@
+ 
+1=add inline css in html
+ <div id="root" style="color: rgb(126, 55, 196); margin-top: 19%;"></div>
+2=add css inside file in same file(inside head)
+<head>
+  3 =write css into other .cssfile and include it into html file
+   //in head tag add  .cssfile in this manner 
+  <link rel="filename i.e stylesheet" href="location_of_file_with_name">
+<style>
+    body {
+       /* url is the relative with respect to folder */
+background-image: url('./pocket-watch-3156771_640.jpg'); /* Set the background image */
+background-size: cover; /* Scale the image to cover the entire container */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-position: center center; /* Center the image within the container */
+width: 100vw;
+height: 100vh; 
+}
+  </style>
+</head>
+3=acessing element with class name to add css
+.classname{
+  color:red
+}
+4=acessing elemet with id 
+#idname{
+  text-emphasis: none; 
+}
+5=add css in tag
+tagname{
+  color :red
+}
+6=tag ke under tag ko acess karna 
+.classname tagname{
+
+}
+7= color (text ka colar)
+8= background(container ka background)
+9=display (container can move )
+10=flex direction row  (row wise arangement)

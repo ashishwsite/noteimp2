@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- flex help in designing the layout and resposnsive it requirde a child and parent
+container -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="css" />
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* to make space b/w border is zero */
+        }
+      .containerParent {
+        border: 2px solid;
+        display: flex;  
+        /* yani ki ye cotainer ab flex bana gaya ,flex container me child  1 row me   arrange hota hai, aur child ki block property removve ho jata hai  */
+        /* display: none ; (ka matlab is container ko mat show karo )
+        display: inline; (ka matlab continer ko inline bana do) */
+        flex-direction: row;
+       /*  yani ab flex  1 row me banega  */
+        /* flex-direction: column; 
+        (yani ki ab flex 1  colums me banega) */
+        /* flex-direction: row-reverse;
+         1 row rahega ,likin child ab right side se fill hoga  */
+        /* flex-direction: column-reverse; 
+        1 colum rahega lekin niche se fill hoga  */
+        flex-wrap: wrap;
+        /* jab child ki width/ height chote hone laga tak 1ke  niche 1 aane lagega ; */
+        gap: 2px ;
+         /* 2 child ke b/w gap lega  */
+         row-gap: 2 px;
+         /* 2 child ke b/w gap creadit karega jab row banega  */
+         column-gap: 2px;
+         /* 2 child ke b/w gap creadit karega jab columns banega  */
+         justify-content: center;
+          /* horizontally centre karega  */
+         justify-content: space-around;
+           /* bacha hua space horizontally left and right me distrubute ho jaega child ke corrospondi g */
+          align-items: center;
+          /* vertically centre karega */
+          /* align-content: center; */
+          /* ye jab used hoga ,jab child wrap hokar child set hone ke liye  */
+      }
+      .flexchild {
+
+        border: 2px solid green;
+        width: 50px;
+        margin: 20px;
+        /* seting child propert to display child differnt then other child */
+       flex-grow: 1 ;
+       /* help to used the extra remaing space by child 1; */
+       flex-basis: 30px; 
+       /* it help to set the witdh of paarticular child  */
+       align-self: self-start;
+       /* to move particular child */
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="containerParent">
+      <div class="flexchild">1</div>
+      <div class="flexchild">2</div>
+      <div class="flexchild">3</div>
+      <div class="flexchild">4</div>
+      <div class="flexchild">5</div>
+      <div class="flexchild">6</div>
+      <div class="flexchild">7</div>
+      <div class="flexchild">8</div>
+    </div>
+  </body>
+</html>
